@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+                @media (max-width: 768px) {
+        .slider-container {      /* Use the class of your slider wrapper */
+            overflow: hidden !important;
+        }
+
+        .slider-container .slide {   /* Slide class */
+            width: 100% !important;
+            flex: 0 0 100% !important;  /* Stops multiple slides visible */
+        }
+        .slider-container {
+            display: block !important;
+        }
+        }
+        .carousel, .slider, .slides {
+    overflow: hidden !important;
+  }
+
+  .carousel .item, .slider .slide, .slides .slide {
+    width: 100% !important;
+    flex: none !important;
+  }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="{% url 'index' %}">AdullamTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'contact' %}">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'message' %}">Leave a Message</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+    <section class="bg-dark text-light pt-lg-5 text-sm-start" id="bgc">
+  <div class="container container-fluid">
+      <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="pt-5 pt-lg-0">
+            <br>
+            <div class="text-center">
+              <h1>Welcome to <span class="text-warning">Adullam Technologies</span></h1>
+            </div>
+              <p class="lead my-4">
+                  <b>Adullam Technologies is a forward-thinking digital technology company dedicated to empowering businesses, institutions, entrepreneurs, and startups with innovative digital solutions. We combine creativity, technology, and strategic thinking to help our clients thrive in an increasingly digital world.
+                    At Adullam Technologies, we understand that every brand is unique, which is why we develop customized solutions designed to enhance scalability, efficiency, and digital presence. Our team consists of skilled professionals with expertise across various fields of digital innovation, committed to delivering excellence and measurable results.
+                    Whether you are looking to build a powerful online presence, develop intelligent software applications, create compelling digital content, or grow your brand visibility, Adullam Technologies is your trusted partner in digital transformation.
+                    Our mission is to drive growth, creativity, and success through modern technology and intentional design.</b>
+              </p>
+              <div class="text-center">
+                <!-- <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                    Enroll Now
+                </button> -->
+            </div>
+            <div class="text-center">
+                <img class="img-fluid w-50 pt-3" src="static\img\showcase.svg" alt="Image">
+            </div>
+            </div>
+      </div>
+  </div>
+</section>
+
+<section class="p-5">
+  <div class="">
+    <h2 class="text-center text-dark">Our Services</h2>
+            <p class="lead text-center text-dark mb-5">
+                At Adullam Technologies, we offer you quality and affordable services.
+            </p>
+      <div class="row text-center g-4">
+          <div class="col-md col-lg-3">
+              <div class="card bg-dark text-light">
+                  <div class="card-body text-center">
+                      <div class="h1 mb-3">
+                          <i class="bi bi-laptop"></i>
+                      </div>
+                      <h3 class="card-title mb-3">
+                          Web Design
+                      </h3>
+                      <p class="card-text">
+                          We build responsive, visually appealing, and user-friendly websites that help businesses establish a strong digital presence. Our websites are optimized for performance, security, and conversion, ensuring a smooth experience across all devices.
+                      </p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-md col-lg-3">
+              <div class="card bg-dark text-light">
+                  <div class="card-body text-center">
+                      <div class="h1 mb-3">
+                          <i class="bi bi-person-square"></i>
+                      </div>
+                      <h3 class="card-title mb-3">
+                          Graphics/Visual Design
+                      </h3>
+                      <p class="card-text">
+                          We create captivating and professional graphics that communicate ideas clearly and strengthen brand identity. From branding materials to promotional designs, we bring creativity to life with visual excellence
+                      </p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-md col-lg-3">
+              <div class="card bg-dark text-white">
+                  <div class="card-body text-center">
+                      <div class="h1 mb-3">
+                          <i class="bi bi-people"></i>
+                      </div>
+                      <h3 class="card-title mb-3">
+                          Software Development
+                      </h3>
+                      <p class="card-text">
+                        We develop custom software solutions tailored to business needs; whether web-based systems, mobile apps, or enterprise applications. Our solutions improve workflow efficiency, automation, and data management.
+                      </p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-md col-lg-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Mobile App Development
+                    </h3>
+                    <p class="card-text">
+                      Design and development of softwares ranging from
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md col-lg-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Social Media Management
+                    </h3>
+                    <p class="card-text">
+                        We design and develop your websites for you just the way you like it and it's also incredibly affordable
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md col-lg-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Search Engine Optimization
+                    </h3>
+                    <p class="card-text">
+                        We help businesses increase online visibility, rank better on search engines, and reach their target audience organically. Our strategies enhance website performance, traffic, and conversion.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md col-lg-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Video Editing & Content Creation
+                    </h3>
+                    <p class="card-text">
+                        We produce creative and high–quality video content for marketing, corporate presentations, educational material, and social media. Our video editing service ensures professional storytelling that captures attention and inspires action.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md col-lg-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Digital Branding & Marketing
+                    </h3>
+                    <p class="card-text">
+                        We help brands grow through strategic digital marketing, social media management, and brand positioning that drives visibility and customer loyalty.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="p-5 bg-dark text-light">
+  <div class="bg-dark lead">
+      <div class="row g-4">
+          <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <br>
+              <ul>
+                  <li class="list-group-item">
+                      <span class="fw-bold">Main Location:      </span> No 7, Riverside behind Kapda Market, Aso road, Nasarawa.
+                  </li>
+                  <hr>
+                  <li class="list-group-item">
+                      <span class="fw-bold">Phone:      </span> +234 703 394 7599
+                  </li>
+                  <hr>
+                  <li class="list-group-item">
+                      <span class="fw-bold">Alternate Phone:      </span> +234 810 304 3197
+                  </li>
+                  <hr>
+                  <li class="list-group-item">
+                      <span class="fw-bold">Email:      </span> michaelizzy2@gmail.com
+                  </li>
+                  <hr>
+              </ul>
+              <br>
+              <h2 class="text-center mb-4">Social Handles</h2>
+              <div class="text-center">
+                    <a href="https://wa.me/2347033947599"><i class="bi bi-whatsapp text-light mx-1"></i></a>
+                    <a href="https://www.linkedin.com/in/michael-israel-310097355"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                    <a href="https://www.facebook.com/Michael.Israel.9022666"><i class="bi bi-facebook text-light mx-1"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="message" class="p5">
+  <div class="container-fluid" id="message">
+      <h2 class="text-center my-4">Leave us a Message</h2>
+            <div class="card my-3 shadow">
+                <div class="card-body">
+                  <form method="POST">
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">
+                            Name:
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">
+                            Email:
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">
+                            Phone:
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="col-form-label">
+                          Message:
+                      </label>
+                    
+                      <textarea name="" id="" class="form-control"></textarea>
+                  </div>
+                  <div class="d-grid gap-2">  
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                  </form>  
+                </div>
+      </div>            
+  </div>
+</section>
+
+<footer class="p-5 bg-dark text-white text-center position-relative">
+  <div class="container-fluid">
+      <p class="lead">Copyright &copy; 2025 Adullam Technologies</p>
+      <a href="" class="position-absolute bottom-0 end-0 p-5">
+          <!-- <i class="bi bi-arrow-up-circle h1"></i> -->
+      </a>
+  </div>
+  <div class="text-center">
+        <a href="https://wa.me/2347033947599"><i class="bi bi-whatsapp text-light mx-1"></i></a>
+        <a href="https://www.linkedin.com/in/michael-israel-310097355"><i class="bi bi-linkedin text-light mx-1"></i></a>
+        <a href="https://www.facebook.com/Michael.Israel.9022666"><i class="bi bi-facebook text-light mx-1"></i></a>
+    </div>
+</footer>
+
+    <link rel="stylesheet" href="static/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="static/js/bootstrap.bundle.js.map">
+    <link rel="stylesheet" href="static/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="static/js/bootstrap.bundle.min.js.map">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
