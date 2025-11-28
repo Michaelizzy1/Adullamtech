@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adullamtech.onrender.com/sitemap.xml
